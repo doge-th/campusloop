@@ -387,7 +387,9 @@ input[type="range"] { accent-color: var(--pine); width: 100%; }
 
 /* ---------------- small helpers used by views ---------------- */
 
-.stack { display: grid; gap: 14px; }
+/* align-content:start keeps cards at content height even when a parent grid
+   row stretches the stack to match a taller sibling column */
+.stack { display: grid; gap: 14px; align-content: start; }
 .stack-sm { display: grid; gap: 8px; }
 .hair { height: 1px; background: var(--line); margin: 12px 0; border: 0; }
 .pillrow { display: flex; flex-wrap: wrap; gap: 6px; }
