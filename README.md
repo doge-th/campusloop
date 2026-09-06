@@ -14,6 +14,23 @@ computed in the page, from code in this repository, at the moment you see it.
 > Every statistic below was reproduced by `npx vitest run` on this commit
 > (8/8 tests green). Nothing here is a placeholder.
 
+## 30-second pitch
+
+> Ridgeline Secondary School re-homes 6 textbook copies per student per year.
+> CampusLoop runs the entire circulation desk in the student's browser:
+> it photographs a cover and recognises the book, it forecasts how many copies
+> will be stranded next month, it matches listings to requests with a
+> fairness weight (so the students who arrive last still get a copy), and it
+> keeps an honest ledger of how much paper and carbon the loop actually
+> diverted from the bin. No backend. No model files. No network calls. **Every
+> number on the screen was computed in the page, from code in this
+> repository, at the moment the reviewer clicked.**
+
+If you have 30 seconds: open the [live demo](https://doge-th.github.io/campusloop/)
+and click **Overview → Scan → Loop → Match → Forecast → Impact → Method**.
+If you have 10 minutes: [watch the walkthrough](https://doge-th.github.io/campusloop/campusloop_demo.mp4)
+and read this README top to bottom.
+
 ## Preview
 
 Seven views, one browser tab. The live demo embeds the same synthetic campus
@@ -122,6 +139,7 @@ docs/
   IMPACT.md           every constant, factor and formula, incl. what the ledger omits
   PRIVACY.md          why there is no backend, and what localStorage holds
   DEVELOPMENT_LOG.md  how this was built, including what broke and was fixed
+  ROADMAP.md          shipped, next, deliberately out of scope, open questions
 ```
 
 ## Credits
@@ -161,3 +179,24 @@ Built by **doge** (16-year-old high-school student) with an AI coding agent
 ## License
 
 [MIT](LICENSE) © 2026 doge-th
+
+## References
+
+- **Hopcroft-Karp** bipartite matching: Hopcroft, J. & Karp, R. (1973). "An
+  n^{5/2} algorithm for maximum matchings in bipartite graphs." *SIAM J.
+  Comput.* 2(4): 225–231.
+- **Mini-batch SGD / linear regression** baseline (sklearn equivalent):
+  Pedregosa, F. et al. (2011). "Scikit-learn: Machine Learning in Python."
+  *JMLR* 12: 2825–2830.
+- **Emission factors for printing-and-writing paper** (cradle-to-gate,
+  0.7 / 1.2 / 2.5 kg CO2e per kg): values cited in `docs/IMPACT.md` from
+  published EPDs; mid-range used as the headline, full range surfaced in
+  the UI so the figure cannot be quoted out of context.
+- **Tree-year equivalence** (~21 kg CO2e / mature tree / year): USDA
+  Forest Service urban-tree growth guidance.
+- **Transport equivalence** (400 g CO2e per km, average mid-size petrol
+  passenger car): US EPA Greenhouse Gas Equivalencies.
+- **Stranded-textbook framing**: derived from a single secondary-school
+  internal estimate ("6 copies per student per year") used as the running
+  example throughout the demo. Numbers in the app come from the seeded
+  synthetic campus, not from any real school record.
