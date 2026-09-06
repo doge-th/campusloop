@@ -115,9 +115,14 @@ From `npm run test`, the full reports the Method view also renders live:
 npm install        # deps: react, react-dom (runtime) + vite, typescript, vitest (dev)
 npm run dev        # http://localhost:5173/campusloop/
 npm run build      # tsc --noEmit && vite build  ->  dist/
-npm run test       # 8 tests, prints the four authoritative reports
+npm run test       # 19 tests, prints the four authoritative reports
+npm run verify     # one-line verifier: prints every headline number in this README
 npm run preview    # serve the production build
 ```
+
+`npm run verify` is the single command a reviewer should run on a fresh
+clone to confirm that every number quoted in this README is the live output
+of the committed test suite — not a stale hand-typed figure.
 
 There is no environment file, no API key, and no account. State lives in
 `localStorage` under `campusloop.v1`; the "Reset demo campus" button reseeds
