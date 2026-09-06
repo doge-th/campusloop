@@ -1,0 +1,18 @@
+# CampusLoop code owners — single owner project today, ready for collaborators
+# when the README roadmap ships.
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default: doge-th reviews everything unless an override below matches.
+*                                       @doge-th
+
+# Algorithmic core (recognition / forecast / matching / impact): each module
+# is reviewed by whoever last touched its metric in the README.
+src/lib/classify.ts                    @doge-th
+src/lib/regress.ts                     @doge-th
+src/lib/matching.ts                    @doge-th
+src/lib/impact.ts                      @doge-th
+src/lib/descriptor.ts                  @doge-th
+
+# Public-facing docs (judges read these first).
+README.md                              @doge-th
+docs/                                  @doge-th
