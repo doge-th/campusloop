@@ -221,6 +221,45 @@ handle `doge-th`, single-competitor submissions so far):
 
 Live portfolio: <https://devpost.com/doge-th>
 
+## FAQ for judges
+
+> **Q1. Is the data real?** No — every number comes from a synthetic campus
+> (`Ridgeline Secondary School`, 20 months of seeded history at
+> `20260905`). The README is explicit about this in the **Overview**
+> section. The whole point of the build is to demonstrate the four engines
+> on a known input, not to claim field results.
+>
+> **Q2. Why no backend?** Two reasons: privacy (a school library should not
+> upload its circulation records to a third party), and auditable code
+> (every line that computes a number is in this repository, not on a
+> server the judge cannot see). The trade-off is documented in
+> `docs/PRIVACY.md`.
+>
+> **Q3. Why no neural network?** Because the demo catalogue has 12 covers.
+> A learned model would overfit at this size, and would also force a 1–5 MB
+> weight file into the bundle. The hand-crafted descriptor costs < 30 KB
+> and reaches 94–97% top-1. The reasoning behind the protocol choice is in
+> `docs/ML.md`.
+>
+> **Q4. How is "fair" measured?** The matching utility has a `fairnessWeight`
+> knob (default 0.45) that adds a 45% bonus to a "supported place" request
+> and a 31.5% bonus to a "newly arrived" request. The 5 contract tests in
+> `src/lib/fairnessProperty.test.ts` pin these numbers so a reviewer can
+> change the knob and see the result.
+>
+> **Q5. Is the demo reproducible?** Yes. `npm install && npm run verify`
+> on a fresh clone prints the same nine headline numbers the README quotes
+> (`recognition top-1`, `forecast MAE`, `matching cardinality / ceiling`,
+> `supported served`, `impact diverted`, `circularity`, `CO2e avoided`).
+> The deviation is ±0.0 because both surfaces read from the committed test
+> suite.
+>
+> **Q6. Who built this and how?** A 16-year-old high-school student
+> (handle `doge`, full handle `doge-th` on GitHub and Devpost) with an AI
+> coding agent (Trae) assisting under continuous human direction and review.
+> The full breakdown of what was decided by the human vs assisted by the
+> AI is in the **AI Usage Disclosure** section below.
+
 ## References
 
 - **Hopcroft-Karp** bipartite matching: Hopcroft, J. & Karp, R. (1973). "An
