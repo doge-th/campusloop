@@ -1,5 +1,12 @@
 # CampusLoop
 
+[![Tests: 19/19](https://img.shields.io/badge/tests-19%2F19-brightgreen)]()
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)]()
+[![AI disclosed](https://img.shields.io/badge/AI%20usage-disclosed-yellow)]()
+[![3 hackathons submitted](https://img.shields.io/badge/hackathons-3%20submitted-success)]()
+[![Zero backend](https://img.shields.io/badge/backend-none-lightgrey)]()
+[![Zero network](https://img.shields.io/badge/network-none-lightgrey)]()
+
 **Every textbook deserves a second student.** CampusLoop is a browser-only
 circulation desk for school textbooks: photograph a cover and it recognises the
 book, it forecasts how many copies will be stranded next month, it matches
