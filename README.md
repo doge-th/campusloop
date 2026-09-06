@@ -145,6 +145,7 @@ docs/
   PRIVACY.md          why there is no backend, and what localStorage holds
   DEVELOPMENT_LOG.md  how this was built, including what broke and was fixed
   ROADMAP.md          shipped, next, deliberately out of scope, open questions
+SECURITY.md          why a zero-backend app has a short threat model
 ```
 
 ## Credits
