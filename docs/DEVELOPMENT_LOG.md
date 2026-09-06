@@ -118,3 +118,43 @@ Every figure in this repo either comes from `npm run test`, or is labelled as
 an estimate with its range visible. Two of my proudest features (the
 unweighted optimiser, the clean-gallery accuracy) were demoted by my own
 measurement setups — and the project is better for having written that down.
+
+## Phase 5 — Post-submission polish (Sep 6, 2026)
+
+After the three Devpost submissions went SUBMITTED, the work was about
+making sure a *fresh-clone* reviewer can confirm the README is honest in
+under a minute, without having to believe any single sentence on its own.
+This phase added the visible scaffolding that makes the trust claim testable,
+not just claimed:
+
+- **Preview gallery**: 7 hand-captured screenshots of the seven views,
+  committed to `public/`, embedded at the top of the README so the judge
+  sees what the product looks like before cloning. Generated via
+  `playwright` over the live GitHub Pages deployment, so the screenshots
+  *are* the running app at the time of commit.
+- **30-second pitch**: a six-sentence elevator at the top of the README
+  that the README used to skip past. Most judges spend 30 seconds on a
+  README; the pitch is what that 30 seconds lands on.
+- **`npm run verify` and `npm run verify:json`**: the same test suite
+  that emits the four report blocks also drives a one-line verifier. The
+  JSON variant is for CI / judge scripts. Both exit non-zero if any
+  README-quoted number is missing from the live test output — i.e. if a
+  future commit breaks a reported number without updating the README,
+  `verify` fails, and the commit is rejected.
+- **`docs/ROADMAP.md`**: ships / next / out-of-scope / open questions. The
+  out-of-scope section is the most honest part — it says what the demo
+  is *not* trying to be, so a judge does not have to ask.
+- **`SECURITY.md`**: makes the zero-backend threat model explicit. There
+  is no service to authenticate against, so the threat model is short,
+  and the file says so.
+- **Judge's 1-minute verification**: three commands a sceptical reviewer
+  can run, in any order, to convince themselves the README matches the
+  repository.
+- **FAQ for judges**: the six questions the README used to invite in
+  the comments — answered in advance, with file pointers, so a judge
+  does not have to ask.
+- **`CODEOWNERS`, `.editorconfig`**: small signals of "this project is
+  ready for a second contributor", not just for one builder's portfolio.
+
+The pattern across all of these is the same: **the README used to
+*describe* the trust claim; now the trust claim is *executable*.**
