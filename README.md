@@ -12,7 +12,9 @@ computed in the page, from code in this repository, at the moment you see it.
 
 > **Live demo:** <https://doge-th.github.io/campusloop/>
 > Every statistic below was reproduced by `npx vitest run` on this commit
-> (8/8 tests green). Nothing here is a placeholder.
+> (19/19 tests green). Nothing here is a placeholder.
+
+[![CampusLoop — 4:47 walkthrough](public/campusloop_demo_poster.jpg)](public/campusloop_demo.mp4)
 
 ## 30-second pitch
 
