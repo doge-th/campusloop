@@ -180,6 +180,19 @@ Built by **doge** (16-year-old high-school student) with an AI coding agent
 
 [MIT](LICENSE) © 2026 doge-th
 
+## Submission status
+
+CampusLoop has been submitted to the following student hackathons (Devpost
+handle `doge-th`, single-competitor submissions so far):
+
+| Hackathon | Deadline | Tracks entered | Status |
+|---|---|---|---|
+| NextStep Hacks 2026 (30878) | 9/14/2026 | Best Beginner · Most Creative · Most Practical · Innovation Awards opt-in | SUBMITTED |
+| First Commit — Beginner's Paradise (30892) | 9/30/2026 | Champion · Most Ambitious · Most Creative · Best Web/App · Best Design | SUBMITTED |
+| CSC Back-to-School Hackathon (30632) | 10/5/2026 | CSC Innovation Gold / Silver / Bronze / Honourable Mention (all four opted in) | SUBMITTED |
+
+Live portfolio: <https://devpost.com/doge-th>
+
 ## References
 
 - **Hopcroft-Karp** bipartite matching: Hopcroft, J. & Karp, R. (1973). "An
