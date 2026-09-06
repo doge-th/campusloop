@@ -14,6 +14,22 @@ computed in the page, from code in this repository, at the moment you see it.
 > Every statistic below was reproduced by `npx vitest run` on this commit
 > (8/8 tests green). Nothing here is a placeholder.
 
+## Preview
+
+Seven views, one browser tab. The live demo embeds the same synthetic campus
+seeded at `20260905`, so what you click is exactly what the screenshot below
+shows.
+
+| | |
+| --- | --- |
+| ![Overview](public/overview.png) | ![Scan](public/scan.png) |
+| ![Loop](public/loop.png) | ![Match](public/match.png) |
+| ![Forecast](public/forecast.png) | ![Impact](public/impact.png) |
+| ![Method](public/method.png) | |
+
+Watch the **4:47 walkthrough** at the link above the README, or jump straight
+to the live demo and click through the seven tabs.
+
 ---
 
 ## Overview
