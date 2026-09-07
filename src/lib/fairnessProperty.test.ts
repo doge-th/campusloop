@@ -14,6 +14,8 @@ import { pairUtility, DEFAULT_MATCH } from './matching';
  */
 describe('matching — fairness weight contract', () => {
   // A fully-feasible listing + request with known fields.
+  // `owner` is a required field on `Listing`; pairUtility reads neither it
+  // nor any of the request-side flags, so we can hand it a dummy.
   const baseListing = {
     id: 'L-test',
     bookId: 'bk-test',
@@ -21,6 +23,7 @@ describe('matching — fairness weight contract', () => {
     availableFrom: '2026-08-01',
     status: 'open' as const,
     viaScan: true,
+    owner: 'test-owner',
   };
   const defaultRequest = {
     id: 'R-test',
@@ -28,6 +31,8 @@ describe('matching — fairness weight contract', () => {
     neededBy: '2026-09-30',
     status: 'open' as const,
     priority: 1 as const,
+    student: 'test-student',
+    homeroom: 'HR-test',
   };
 
   it('priority 1 (default tier) ignores the fairness weight', () => {
