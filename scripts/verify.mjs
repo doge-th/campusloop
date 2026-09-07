@@ -53,16 +53,26 @@ const pick = (re) => {
 const lines = [
   'CampusLoop headline verifier',
   '─────────────────────────────',
-  `recognition top-1 (Protocol A) : ${pick(/protocol A top-1\s*:\s*(\d{2,3}\.\d)%/)}`,
-  `recognition top-1 (Protocol B) : ${pick(/protocol B top-1\s*:\s*(\d{2,3}\.\d)%/)}`,
+  `recognition top-1 (Protocol A) : ${pick(/protocol A top-1\s*:\s*(\d{2,3}\.\d)%/)}%`,
+  `recognition top-1 (Protocol B) : ${pick(/protocol B top-1\s*:\s*(\d{2,3}\.\d)%/)}%`,
   `forecast holdout MAE            : ${pick(/holdout MAE\s+model (\d+\.\d+)/)}`,
   `forecast holdout R²             : ${pick(/holdout R2\s+model ([+-]?\d+\.\d+)/)}`,
   `matching cardinality / ceiling  : ${pick(/cardinality\s*: first-fit (\d+)/)} / ${pick(/theoretical ceiling (\d+)/)}`,
   `supported served / total        : ${pick(/ours (\d+) \/ (\d+)/)}`,
   `impact diverted (kg)            : ${pick(/diverted (\d+\.\d+)/)}`,
-  `impact circularity              : ${pick(/circularity (\d+\.\d+)/)}`,
+  `impact circularity              : ${pick(/circularity (\d+\.\d+)/)}%`,
   `impact CO2e avoided (kg)        : ${pick(/CO2e avoided (\d+\.\d+)/)}`,
   '─────────────────────────────',
   'all headline numbers emitted by the committed test suite.',
 ];
 console.log(lines.join('\n'));
+
+// Cross-check: every value above must be parseable (not "??). If any "??"
+// slipped through, fail loudly so CI / judges pick it up.
+const missing = lines.filter((l) => /\?\?/.test(l));
+if (missing.length) {
+  process.stderr.write(`\nverify failed: ${missing.length} headline number(s) missing from test output:\n`);
+  process.stderr.write(missing.map((l) => '  ' + l).join('\n') + '\n');
+  process.exit(1);
+}
+process.exit(0);
