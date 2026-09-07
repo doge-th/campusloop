@@ -233,6 +233,37 @@ open the project): <https://devpost.com/software/campusloop-p3vahw>
 
 Live portfolio: <https://devpost.com/doge-th>
 
+## What reviewers should know that isn't in any single section
+
+> A few short facts kept here so a reviewer doesn't have to hunt for them.
+> None of these are advertised as achievements; they are honest notes about
+> how to read this repository.
+
+- **The numbers in this README are emitted by code.** `npm run verify` prints
+  every headline number this README quotes. If a future commit breaks a
+  number, that command exits non-zero. There is no second hand-typed copy
+  that can drift out of sync.
+- **The software public page on Devpost is the canonical renderer.** When a
+  reviewer sees this project on Devpost, the description that renders there
+  is the same one that lives in this repository. There is no "marketing
+  copy" that diverges from the source.
+- **The Devpost page is updated by editing the software record, not the
+  wizard.** Once a submission is `SUBMITTED`, the wizard's per-hackathon
+  fields are read-only for the duration of judging. The software record
+  remains the surface that all three hackathons display, which is why this
+  README documents the software record as the single source of truth.
+- **There is no Discord or mailing-list to follow.** Three Devpost hackathon
+  organisers are independent; winners are published on the Devpost project
+  page. The portfolio at <https://devpost.com/doge-th> is the canonical
+  announcement surface.
+- **The bundle is 25 kB gzipped** (excluding the demo video). The runtime
+  dependencies are `react` and `react-dom` only. There is no analytics
+  request, no telemetry ping, no model file to download.
+- **The demo video is 10.7 MB** and is hosted on GitHub Pages under the
+  same domain as the project. Hackathon platforms only embed YouTube /
+  Vimeo / Youku; the README explains why this submission ships its own
+  hosted video instead.
+
 ## Per-hackathon submission hooks
 
 > Three Devpost forms were filled from the same project description above.
