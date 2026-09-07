@@ -228,6 +228,53 @@ handle `doge-th`, single-competitor submissions so far):
 
 Live portfolio: <https://devpost.com/doge-th>
 
+## Per-hackathon submission hooks
+
+> Three Devpost forms were filled from the same project description above.
+> The paragraphs below are what was *added* on top of the base README
+> for each individual submission form — copy-paste ready if you need to
+> re-submit or if you want to see how the same project reads against three
+> different scoring rubrics.
+
+### NextStep Hacks 2026
+
+> CampusLoop is what schools actually need: not a database, but a tool that
+> runs in the student's browser and tells the librarian, before term-end,
+> which subjects are about to be stranded. We spent four engines (recognition,
+> forecast, fairness matching, mass-and-carbon ledger) on the problems the
+> description in the README says we spent them on, and we wrote every line of
+> each engine by hand so a judge can read it in under an evening. The
+> submission includes a 4:47 walkthrough of the seven-tab demo, a public
+> GitHub repo with 19 tests passing, a one-line `npm run verify` that prints
+> the same numbers the README quotes, and a hosted live demo. AI assistance
+> is disclosed in the README and on this form, per the rules.
+
+### First Commit (Beginner's Paradise)
+
+> I am sixteen. This is the first project I have ever shipped end-to-end.
+> CampusLoop runs entirely in the browser, with no API key, no model file,
+> no network call, so the only barrier between me and a working submission
+> was the project itself. The README tells the full learning story —
+> leakage caught twice in the regression, the protocol that flattered the
+> classifier until I built the one that did not, the matching-objective
+> difference between first-fit and fairness-weighted that moved five real
+> students into books. The AI Usage Disclosure names what I decided, what
+> the agent helped write, and what the project does to keep both honest.
+
+### CSC Back-to-School Hackathon (Innovation Awards tracks)
+
+> CampusLoop's four engines (recognition, forecast, matching, impact) all
+> target the same operational decision a school librarian actually has to
+> make around term-end: how many extra copies will be stranded, where to
+> run a second swap day, and what to book the recycling collection for.
+> None of the four are wrapped around a model API or a remote service —
+> every line is in this repository, every number is emitted by the committed
+> test suite, and the live demo runs against the same synthetic campus
+> seeded at `20260905`. The submission opts in to all four Innovation
+> Award tracks because the build touches four distinct disciplines
+> (computer vision, forecasting, combinatorial optimisation, environmental
+> accounting) without a backend in any of them.
+
 ## FAQ for judges
 
 > **Q1. Is the data real?** No — every number comes from a synthetic campus
