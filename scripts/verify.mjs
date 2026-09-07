@@ -31,11 +31,22 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const root = resolve(__dirname, '..');
 
-// Pin to the project's own vitest so the version matches CI.
-const cmd = `npx vitest run src/lib/metrics.test.ts`;
+// Run the full build (tsc strict + vite) FIRST. `npm run test` alone is
+// not enough because vitest skips type errors — that's how 24 Deploy-site
+// failures slipped through after commit d517c86.
+try {
+  execSync('npm run build', { cwd: root, encoding: 'utf-8', stdio: ['ignore', 'pipe', 'pipe'] });
+} catch (err) {
+  const all = (err.stdout ?? '') + (err.stderr ?? '');
+  console.error('verify failed — `npm run build` did not pass (CI is red):');
+  console.error((all || err.message).slice(-2000));
+  process.exit(2);
+}
+
+// Then run the headline-number test suite.
 let stdout;
 try {
-  stdout = execSync(cmd, { cwd: root, encoding: 'utf-8', stdio: ['ignore', 'pipe', 'pipe'] });
+  stdout = execSync(`npx vitest run src/lib/metrics.test.ts`, { cwd: root, encoding: 'utf-8', stdio: ['ignore', 'pipe', 'pipe'] });
 } catch (err) {
   const all = (err.stdout ?? '') + (err.stderr ?? '');
   console.error('verify failed — `npm run test` did not pass:');
