@@ -224,9 +224,9 @@ handle `doge-th`, single-competitor submissions so far):
 
 | Hackathon | Deadline | Tracks entered | Submission ID | Status |
 |---|---|---|---|---|
-| NextStep Hacks 2026 (30878) | 9/14/2026 | Best Beginner · Most Creative · Most Practical · Innovation Awards opt-in | 1171907 | SUBMITTED (NextStep page taken down by the organiser on 9/7 — judging complete, winners page not yet public; updates / late changes are blocked) |
-| First Commit — Beginner's Paradise (30892) | 9/30/2026 | Champion · Most Ambitious · Most Creative · Best Web/App · Best Design | 1171917 | SUBMITTED (gallery page still empty — winners not yet public) |
-| CSC Back-to-School Hackathon (30632) | 10/5/2026 | CSC Innovation Gold / Silver / Bronze / Honourable Mention (all four opted in) | 1172064 | SUBMITTED (still accepting submissions; judging window has not started) |
+| NextStep Hacks 2026 (30878) | 9/14/2026 (6 days) | Best Beginner · Most Creative · Most Practical · Innovation Awards opt-in | 1171907 | SUBMITTED; 596 participants, $1,750 in cash |
+| First Commit — Beginner's Paradise (30892) | 10/1/2026 (23 days) | Champion · Most Ambitious · Most Creative · Best Web/App · Best Design | 1171917 | SUBMITTED; 446 participants, $952 in cash |
+| CSC Back-to-School Hackathon (30632) | 10/5/2026 (28 days) | CSC Innovation Gold / Silver / Bronze / Honourable Mention (all four opted in) | 1172064 | SUBMITTED; 121 participants, $400 in cash |
 
 Public submission page on Devpost (what a judge actually sees when they
 open the project): <https://devpost.com/software/campusloop-p3vahw>
