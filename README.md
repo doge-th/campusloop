@@ -257,6 +257,17 @@ open the project): <https://devpost.com/software/campusloop-p3vahw>
 
 Live portfolio: <https://devpost.com/doge-th>
 
+## Showcase pitches
+
+> Copy-paste-ready showcase posts for the NextStep Discord
+> (`discord.gg/hFxwvgZDsh`), the NextStep Devpost Discussions (which
+> require a human to solve the challenge), and the HackAlphaX email
+> (`contact@hackalphax.co`). Devpost requires a reCAPTCHA on the
+> Discussions form, so the post has to be made by hand in a logged-in
+> browser. The file `PH.md` at the repository root has the three
+> versions — the long version below is the same text that is in PH.md
+> and is the one I attempted to post before the reCAPTCHA blocked it.
+
 ## Build period & prior-work disclosure
 
 > Three hackathons have been entered with the same project. Each
