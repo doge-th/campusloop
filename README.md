@@ -249,7 +249,7 @@ handle `doge-th`, single-competitor submissions so far):
 | Hackathon | Deadline | Tracks entered | Submission ID | Status |
 |---|---|---|---|---|
 | NextStep Hacks 2026 (30878) | 9/13/2026 17:00 EDT (**5 days**) | Best Beginner · Most Creative · Most Practical · Innovation Awards opt-in | 1171907 | SUBMITTED; 649 participants, $1,750 cash + Wolfram Alpha 1000份; winners 9/18 9:00 EDT |
-| First Commit — Beginner's Paradise (30892) | 10/1/2026 (22 days) | Champion · Most Ambitious · Most Creative · Best Web/App · Best Design | 1171917 | SUBMITTED; 446 participants, $952 in cash |
+| First Commit — Beginner's Paradise (30892) | 10/1/2026 (22 days) | Champion · Most Ambitious · Most Creative · Best Web/App · Best Design | 1171917 | SUBMITTED; 517 participants, $1,024 in cash |
 | CSC Back-to-School Hackathon (30632) | 10/5/2026 (26 days) | CSC Innovation Gold / Silver / Bronze / Honourable Mention (all four opted in) | 1172064 | SUBMITTED; 138 participants, $400 cash + sponsor prizes (Momen/Render/Featherless/n8n/Boot.dev/Gen.xyz/Backboard) |
 
 Public submission page on Devpost (what a judge actually sees when they
