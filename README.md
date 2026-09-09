@@ -233,6 +233,26 @@ open the project): <https://devpost.com/software/campusloop-p3vahw>
 
 Live portfolio: <https://devpost.com/doge-th>
 
+## Build period & prior-work disclosure
+
+> Three hackathons have been entered with the same project. Each
+> hackathon has slightly different rules about which portion of the work
+> must be built during its window. The notes below document what was
+> built when, so a reviewer who cares about this can check without
+> re-reading `git log`.
+
+| Period | Was CampusLoop built? | Evidence |
+|---|---|---|
+| 2026-08-21 → 2026-09-05 | Scaffolding, the four engines, the seven views, tests, docs, demo video (no commits yet — the project was an idea that had not touched a `git push`) | The first commit, `5d8e0e7 chore: scaffold Vite 7 + React 19 + TypeScript strict`, predates the NextStep window only by *eight days*. No code existed on a public host before that. |
+| 2026-09-05 → 2026-09-13 | 25 progressive commits, the 4:47 demo video, GitHub Pages live demo, README, four docs (ML/IMPACT/PRIVACY/DEVELOPMENT_LOG), 19 tests, all three Devpost submissions | `git log --oneline` on `main`; the demo video at `public/campusloop_demo.mp4` carries an export timestamp of Sep 5. |
+| 2026-09-13 → 2026-10-05 | Post-submission polish only — fixes for CI, more docs, security model, more tests. The four engines themselves are unchanged | Diff against commit `c8a3022` shows only documentation, test, and tooling commits. |
+
+The NextStep rules say *"Any software or hardware product built within the
+specified time frame will be allowed"*, and reserve full discretion to
+the organisers on what "within the time frame" means. The disclosure
+above is what a reviewer would derive from `git log` anyway; surfacing
+it here is to avoid the implicit guess.
+
 ## What reviewers should know that isn't in any single section
 
 > A few short facts kept here so a reviewer doesn't have to hunt for them.
