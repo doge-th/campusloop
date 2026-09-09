@@ -215,6 +215,30 @@ Built by **doge** (16-year-old high-school student) with an AI coding agent
 
 [MIT](LICENSE) © 2026 doge-th
 
+## How CampusLoop fits the "Earth Forward" theme (NextStep 2026)
+
+> NextStep Hacks 2026 declares its theme as *"Earth Forward"*: tackling
+> environmental challenges with technology. CampusLoop is not a climate
+> sensor or a renewable-energy dashboard. It is a textbook-circulation
+> engine, and the environmental claim it carries is the one the impact
+> ledger makes auditable.
+
+| Earth-Forward category (from NextStep's rules) | CampusLoop's fit | Evidence |
+|---|---|---|
+| Reducing waste | **Direct** — textbooks are listed, matched, and reused instead of landfilled | `docs/IMPACT.md` shows 20 months × 814 listings × 51.4 kg paper diverted = 76.8% circularity; the live demo's **Impact** tab exposes the same numbers |
+| Advancing sustainable resource use | **Direct** — the same reuse mechanism | The **Forecast** tab tells the librarian whether to run a second swap day; "two subjects are predicted to end the term with more copies than the school can place" |
+| Helping communities adapt | **Indirect** — primary users are students, not ecosystems | The **Loop** view shows an explicit list of every open request, weighted by `priority` (default 0.45 fairness weight) so supported places and newly-arrived students get served before first-fit |
+| Conservation math that cannot be gamed | **Direct** — the impact ledger is one line of checkable arithmetic | `mass × edition factor × 0.92` per handover; the slider exposes the emission-factor range (0.7–2.5 kg CO2e/kg) instead of a single hand-typed number |
+| Climate / energy / biodiversity | **Not in scope** | The README does not claim any of these — see `docs/ROADMAP.md` for what is deliberately out of scope |
+
+The honesty is in the disclosure: CampusLoop's environmental claim is
+narrow, auditable, and visible in the UI. It is not a climate model; it is
+*one* library's annual 51 kg of paper and the 56 kg CO2e that comes with
+keeping that paper in the loop. A reviewer who cares about the
+"Earth Forward" alignment can check that number against the
+methodology in `docs/IMPACT.md` and decide whether the narrow claim is
+enough.
+
 ## Submission status
 
 > Last verified 2026-09-07 against the live Devpost portfolio.
