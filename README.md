@@ -275,7 +275,8 @@ it here is to avoid the implicit guess.
 - **There is no Discord or mailing-list to follow.** Three Devpost hackathon
   organisers are independent; winners are published on the Devpost project
   page. The portfolio at <https://devpost.com/doge-th> is the canonical
-  announcement surface.
+  announcement surface. NextStep, however, does run a Discord at
+  `discord.gg/hFxwvgZDsh`; CSC runs one at `discord.gg/wRb7HtMV9`.
 - **The bundle is 25 kB gzipped** (excluding the demo video). The runtime
   dependencies are `react` and `react-dom` only. There is no analytics
   request, no telemetry ping, no model file to download.
