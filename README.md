@@ -257,6 +257,24 @@ open the project): <https://devpost.com/software/campusloop-p3vahw>
 
 Live portfolio: <https://devpost.com/doge-th>
 
+## How to know the winners
+
+> A running ledger of where each hackathon will announce winners, in the
+> order they will land. Knowing where to look first matters when there
+> are three results arriving in five weeks.
+
+| Hackathon | Announced | Where to look first | What you need |
+|---|---|---|---|
+| NextStep Hacks 2026 | 2026-09-18 09:00 EDT | The "My projects" tab at <https://devpost.com/submit-to/30878-nextstep-hacks-2026/manage/submissions> flips from SUBMITTED to one of "Winner", "Runner-up", or "Not selected". A badge appears on the Devpost portfolio. | Logged-in Chrome, fresh visit (the badge takes a beat to propagate). |
+| Beginner's Paradise — FirstCommit | 2026-10-01 17:00 EDT (deadline day; judging and announcement are not separated in the published schedule) | <https://firstcommit.devpost.com/project-gallery>; winners appear as gold-badged projects | Logged-in Chrome. The page will show "Winners announced" once the badges go live. |
+| CSC Back-to-School | 2026-10-15 (typical Devpost cadence; no explicit date in the published schedule) | <https://csc-back-to-school.devpost.com/project-gallery> | Logged-in Chrome. The webbcsc Discord is the next-fastest surface for a heads-up. |
+| GitHub Actions | continuous | <https://github.com/doge-th/campusloop/actions> | A green check beside `Deploy site` means the commit is the current live demo on Pages. |
+
+`npm run verify` re-emits every headline number on demand and exits
+non-zero if any number drifts from the README, so the same script can
+also serve as a quick "did the latest run break anything" check after
+each commit.
+
 ## Showcase pitches
 
 > Copy-paste-ready showcase posts for the NextStep Discord
